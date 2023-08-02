@@ -1,0 +1,18 @@
+---
+const {language} = Astro.props;
+let lang = {
+    en: {
+        title: 'عربي',
+        link: '/ar'
+    },
+    ar: {
+        title: 'English',
+        link: '/en'
+    }
+}
+---
+<header class="py-8 text-center text-gray-600 dark:text-gray-300 font-bold text-2xl">
+    <div class="container mx-auto">
+        <a class="hover:text-gray-400 dark:hover:text-gray-400" href={lang[language].link}>{lang[language].title}</a>
+    </div>
+</header>

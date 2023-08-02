@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from '@astrojs/image/components';
+import logoImage from '../../assets/images/logo.png';
+
+import { Icon } from "astro-icon";
+---
+
+<Layout language="ar" direction="rtl" title="الجمعية السعودية لمهندسي التكاليف" description="جمعية غير ربحية مقرها السعودية لمهندسي التكلفة ومساحي الكميات">
+    <main class="h-full text-gray-600 dark:text-gray-400">
+        <section class="flex justify-center justify-items-center items-center h-full">
+            <div class="py-8 px-4 max-w-screen-lg text-center">
+                <div class="inline-block bg-white rounded-lg shadow-md p-2 mb-8">
+                    <Image class="w-32 h-32" src={logoImage} alt="logo" />
+                </div>
+                
+                <h1 class="
+                mb-4 text-4xl font-bold 
+                drop-shadow-md leading-none 
+                text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">الجمعية السعودية لهندسة التكاليف</h1>
+                <p class="font-normal  md:text-lg xl:text-xl  mb-4">
+                    جمعية غير ربحية <span class="
+                    text-green-700 
+                    dark:text-green-300 
+                    font-bold
+                    ">مقرها السعودية</span> لمهندسي التكلفة ومساحي الكميات
+                    مرخصة من قبل 
+                    <a class="underline" href="https://api.nawa.ncnp.gov.sa/documents/pdf/13470?preview=true&item_type=entity&doc_type=license">
+                        المركز الوطني لتنمية القطاع غير الربحي (5272)</a>
+                </p>
+                <p class="text-slate-500">بتاريخ  <time dir="ltr" datetime="2-August-2023">2-August-2023</time>, هذه الصفحة مازالت تحت الإنشاء. الرجاء زيارتنا لاحقا.</p>
+            </div>
+        </section>
+    </main>
+</Layout>

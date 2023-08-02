@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from '@astrojs/image/components';
+import logoImage from '../../assets/images/logo.png';
+
+import { Icon } from "astro-icon";
+---
+
+<Layout language="en" direction="ltr" title="Saudi Assocation of Cost Enginners" description="A Saudi-based Non-Profit Association of Cost Engineers and Quantity Surveyers">
+    <main class="h-full text-gray-600 dark:text-gray-400">
+        <section class="flex justify-center justify-items-center items-center h-full">
+            <div class="py-8 px-4 max-w-screen-lg text-center">
+                <div class="inline-block bg-white rounded-lg shadow-md p-2 mb-8">
+                    <Image class="w-32 h-32" src={logoImage} alt="logo" />
+                </div>
+                
+                <h1 class="
+                mb-4 text-4xl font-bold 
+                drop-shadow-md leading-none 
+                text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">Assocation of Cost Engineers</h1>                <p class="font-normal  md:text-lg xl:text-xl  mb-4">
+                    A <span class="
+                    text-green-700 
+                    dark:text-green-300 
+                    font-bold
+                    ">Saudi-based</span> non-profit association for Cost Engineers licensed by the 
+                    <a class="underline" href="https://api.nawa.ncnp.gov.sa/documents/pdf/13470?preview=true&item_type=entity&doc_type=license">National Center for Non-Profit Sector (5272)</a>
+                </p>
+                <p class="text-slate-500">As of <time dir="ltr" datetime="2-August-2023">2-August-2023</time>, the page is still under construction, please visit back later.</p>
+            </div>
+        </section>
+    </main>
+</Layout>
